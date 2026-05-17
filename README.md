@@ -1,5 +1,7 @@
 # SEDD: Scalable and Efficient Dataset Deduplication with GPUs
 
+This repository contains the code for the paper "SEDD: Scalable and Efficient Dataset Deduplication with GPUs".
+
 SEDD is a tool designed for efficient deduplication of data, leveraging modern computational frameworks.
 
 ---
