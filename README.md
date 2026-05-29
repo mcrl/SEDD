@@ -60,6 +60,7 @@ make -j
 - The input directory should contain multiple `.jsonl` files.
 - For large JSONL files, it is recommended to split the data into chunks of size `MAX_LINE` and store them separately before proceeding with the deduplication process.
   - The current code assumes a setting where each JSONL file contains MAX_LINE(=30,000) documents.
+  - You can use the provided `preprocess_jsonl.py` script to easily perform this chunking process.
   - You can adjust the value of `MAX_LINE` based on the available memory, and update the adjusted value in `src/param.h`.
 - This code assumes that the JSONL files contain only the `text` field.  
   - If other fields are present, a parsing process will be required. The parsing logic can be found in `src/util.cpp`, but it is currently commented out in this version.
